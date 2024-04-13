@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100%;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.title {
+    color: azure;
+}
+
+.quiz-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(67, 121, 146);
+    height: 220px;
+    min-width: 850px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.question {
+    color: azure;
+}
+
+.options {
+    display: flex;
+    column-gap: 10px;
+}
+
+.btn {
+    background-color: rgb(100, 159, 187);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 40px;
+}
