@@ -28,7 +28,7 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: rgb(67, 121, 146);
-    height: 220px;
+    height: 224px;
     min-width: 850px;
     border-radius: 10px;
     margin-top: 100px;
@@ -36,11 +36,13 @@ body {
 
 .question {
     color: azure;
+    visibility: hidden;
 }
 
 .options {
     display: flex;
     column-gap: 10px;
+    visibility: hidden;
 }
 
 .btn {
@@ -50,4 +52,38 @@ body {
     border-radius: 10px;
     padding: 10px;
     margin-top: 40px;
+}
+
+.result {
+    font-size: 25px;
+    color: aliceblue;
+    margin-top: 12px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.input {
+    color: aliceblue;
+    font-size: 15px;
+}
+
+#nameInput {
+    border: none;
+    background-color: rgb(118, 185, 216);
+    border-radius: 8px;
+    height: 30px;
+    width: 250px;
+}
+
+.start__btn {
+    background-color: rgb(100, 159, 187);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
 }
