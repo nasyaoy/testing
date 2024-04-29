@@ -81,21 +81,27 @@ function displayResult() {
     let questionElement = document.getElementById('question'); // получить блок с вопросом
     let optionsElement = document.getElementById('options'); // получить блок с кнопками
     let resultElement = document.getElementById('result'); // получить блок дл яотображения результата
-    questionElement.style.display = 'none'; // выключть видимость блока вопросов
-    optionsElement.style.display = 'none'; // выключть видимость блока ответов
-    resultElement.textContent = `правильных ответов ${correctAnswers} из ${questions.length}`;// отобразить результат теста
+    let wrongAnswer = question.value
+    questionElement.style.display = 'none'; // выключить видимость блока вопросов
+    optionsElement.style.display = 'none'; // выключить видимость блока ответов
+    let procent = (correctAnswers / questions.length) * 100;
+    resultElement.textContent = `правильных ответов ${correctAnswers} из ${questions.length} (${procent.toFixed(0)}%)`;// отобразить результат теста
 }
 
-let startBtn = document.querySelector('.start__btn');
-startBtn.addEventListener('click', (e) => {
-    e.preventDefault
-    let form = document.querySelector('#nameInput');
-    form.style.display = 'none';
-    let questionElement = document.getElementById('question');
-    let optionsElement = document.getElementById('options');
-    questionElement.style.visibility = 'visible';
-    optionsElement.style.visibility = 'visible';
-});
+// let startBtn = document.querySelector('.start__btn');
+// let input = document.querySelector('#nameInput');
+// startBtn.addEventListener('click', (e) => {
+//     e.preventDefault;
+//     if (input.value === '') {
+//         questionElement.style.visibility = 'hidden';
+//         optionsElement.style.visibility = 'hidden';
+//     } else {
+//         let form = document.querySelectorAll('.form')
+//         questionElement.style.visibility = 'visible';
+//         optionsElement.style.visibility = 'visible';
+//         form.style.display = 'none';
+//     }
+// })
 
 
 displayQuestion();

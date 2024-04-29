@@ -36,13 +36,11 @@ body {
 
 .question {
     color: azure;
-    visibility: hidden;
 }
 
 .options {
     display: flex;
     column-gap: 10px;
-    visibility: hidden;
 }
 
 .btn {
